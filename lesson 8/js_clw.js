@@ -5,8 +5,10 @@ let main = document.getElementById('main_header');
 main.classList.add('sep_2021');
 
 //b) робить шириниу елементу ul 400px
-// let ulElement = document.getElementsByTagName('ul');
-// ulElement.style.width = '400'; //не можу зрозуміти чому мені тут таку помилку видає 'Cannot set properties of undefined (setting 'width')'
+let ulElement = document.getElementsByTagName('ul');
+for (const ul of ulElement) {
+    ul.style.width = '400';
+}
 
 //c) робить шириниу всіх елементів з класом linkList шириною 50%
 let linksList = document.getElementsByClassName('linkList');
