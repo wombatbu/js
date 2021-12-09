@@ -34,9 +34,9 @@ btn2.id = 'btn2';
 document.body.appendChild(btn2);
 
 btn2.onclick = function () {
-    if (input.value >= 18) {
+    if (+input.value >= 18) {
         alert('korystyvachy e 18 :)');
-    } else if (input.value < 18) {
+    } else if (+input.value < 18) {
         alert('korystyvachu nemae 18 :(');
     }
 }
